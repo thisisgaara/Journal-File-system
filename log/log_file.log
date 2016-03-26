@@ -1,0 +1,9 @@
+BEGIN_TRANSACTION
+CHANGE 2 
+PUT(debit_account, dbvalue.new)
+PUT(debit_account, dbvalue.new)
+CHANGE 2 
+PUT(credit_account, crvalue.new)
+PUT(credit_account, crvalue.new)
+OUTCOME COMMITTED 2 
+END_TRANSACTION 2 
